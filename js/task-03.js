@@ -15,11 +15,11 @@ const images = [
 
 
 const imageEl = images.map(image => {
-  return `<li>
-  <img src=${image.url} alt='${image.alt}' width = 400 high = 300>
-  </li>`;
+  return `<li><img src=${image.url} alt='${image.alt}' width = 400 high = 300> </li>`;
 }).join('');
+  
 console.log(imageEl)
 const galleryEl = document.querySelector('#gallery');
 galleryEl.classList.add('gallery__items')
 galleryEl.insertAdjacentHTML('beforeend', imageEl)
+
